@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VEC NFT Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-wrapper">
+        <div class="header-left">
+          <div class="logo">🦄 VEC</div>
+        </div>
+        <nav class="header-center" aria-label="Main Navigation">
+          <button class="hamburger" aria-label="Open menu" aria-controls="main-menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="main-menu">
+            <a href="#hero" class="active">Home</a>
+            <a href="#favorite-art">Explore</a>
+            <a href="#marketplace">Marketplace</a>
+            <a href="#trusted">Investor</a>
+            <a href="#news">News</a>
+            <a href="#how-it-works">How it Works</a>
+            <a href="#testimonials">Testimonials</a>
+          </div>
+        </nav>
+        <div class="header-right">
+          <button class="buy-btn">Buy Now</button>
+          <select class="language-switcher" aria-label="Select Language">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+          </select>
+          <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <span class="theme-icon">
+              <svg class="sun" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+              <svg class="moon" viewBox="0 0 24 24" width="24" height="24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+        <!-- Mobile only header extras -->
+        <div class="header-extras-mobile">
+          <button class="buy-btn">Buy Now</button>
+          <select class="language-switcher" aria-label="Select Language">
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+          </select>
+          <button class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <span class="theme-icon">
+              <svg class="sun" viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+              <svg class="moon" viewBox="0 0 24 24" width="24" height="24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" fill="currentColor"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1>GATHER YOUR<br>RARE NFT HAS<br>ARRIVED.</h1>
+        <p>Get Started with the easiest and most secure platform to buy and trade digital ART and NFT's</p>
+        <div class="hero-actions">
+          <button class="explore-btn">Explore More</button>
+          <button class="show-video"><span>▶</span> Show Video</button>
+        </div>
+        <div class="hero-stats">
+          <div>27 K+<span>Art work</span></div>
+          <div>20 K+<span>Auction</span></div>
+          <div>7 K+<span>Artist</span></div>
+        </div>
+      </div>
+      <div class="hero-nft">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=400&h=400" alt="NFT Hero">
+        <div class="nft-bid-box">
+          <div class="timer">Ending in: <span id="timer">02h 50m 55s</span></div>
+          <div class="price">Highest Bid: 32.4 ETH</div>
+          <div class="bid-actions">
+            <button class="purchase">Purchase</button>
+            <button class="bid">Place a Bid</button>
+          </div>
+        </div>
+      </div>
+      <!-- Video Introduction -->
+      <section class="video-intro-section">
+        <div class="video-intro-box">
+          <h2>Watch: What is VEC NFT Marketplace?</h2>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="VEC NFT Marketplace Intro" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Live Stats -->
+      <section class="live-stats-section scroll-animate" data-animate="fade-in">
+        <div class="live-stats-box">
+          <div class="stat"><span class="stat-value" data-count="32000">0</span><span class="stat-label">NFTs Minted</span></div>
+          <div class="stat"><span class="stat-value" data-count="12500">0</span><span class="stat-label">Active Users</span></div>
+          <div class="stat"><span class="stat-value" data-count="2100000">$0</span><span class="stat-label">Total Volume</span></div>
+          <div class="stat"><span class="stat-value" data-count="1200">0</span><span class="stat-label">Artists</span></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner-section scroll-animate" data-animate="slide-up">
+      <div class="cta-banner">
+        <h2>Ready to start your NFT journey?</h2>
+        <p>Join now and get exclusive early access to the world of digital art and NFTs!</p>
+        <a href="#" class="cta-btn">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Favorite Art Section -->
+    <section class="favorite-art-section" id="favorite-art">
+      <h2>CHOOSE YOUR FAVORITE ART, IF YOU WANT!</h2>
+      <p>Begin with the simplest and most secure store to purchase and exchange advanced workmanship and NFT's</p>
+      <div class="favorite-art-list">
+        <div class="favorite-art-card">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="MetaClubber">
+          <div class="title">MetaClubber #5138</div>
+          <div class="meta">Feb 13, 2023 • 4.97 ETH</div>
+          <button class="view-details">View Details</button>
+        </div>
+        <div class="favorite-art-card">
+          <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="NFT 2">
+          <div class="title">Cyber Ape #2023</div>
+          <div class="meta">Feb 10, 2023 • 3.12 ETH</div>
+          <button class="view-details">View Details</button>
+        </div>
+        <div class="favorite-art-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="NFT 3">
+          <div class="title">Purple Dream #101</div>
+          <div class="meta">Feb 8, 2023 • 2.45 ETH</div>
+          <button class="view-details">View Details</button>
+        </div>
+        <div class="favorite-art-card">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="NFT 4">
+          <div class="title">Pixel Queen #204</div>
+          <div class="meta">Feb 5, 2023 • 5.33 ETH</div>
+          <button class="view-details">View Details</button>
+        </div>
+      </div>
+      <button class="view-all-btn">View All</button>
+    </section>
+
+    <!-- Featured Artists Section -->
+    <section class="featured-artists-section scroll-animate" data-animate="fade-in">
+      <h2>Featured Artists</h2>
+      <div class="featured-artists-list">
+        <div class="featured-artist-card">
+          <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Artist 1">
+          <div class="artist-info">
+            <h3>Samir Khan</h3>
+            <p>Digital Illustrator</p>
+            <span>Top Seller</span>
+          </div>
+        </div>
+        <div class="featured-artist-card">
+          <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="Artist 2">
+          <div class="artist-info">
+            <h3>Linda Park</h3>
+            <p>3D NFT Creator</p>
+            <span>Trending</span>
+          </div>
+        </div>
+        <div class="featured-artist-card">
+          <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Artist 3">
+          <div class="artist-info">
+            <h3>Alexei Ivanov</h3>
+            <p>Crypto Artist</p>
+            <span>New Arrival</span>
+          </div>
+        </div>
+        <div class="featured-artist-card">
+          <img src="https://randomuser.me/api/portraits/women/53.jpg" alt="Artist 4">
+          <div class="artist-info">
+            <h3>Emily Chen</h3>
+            <p>Pixel Art Specialist</p>
+            <span>Staff Pick</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace Section -->
+    <section class="marketplace-section" id="marketplace">
+      <h2>WELCOME TO THE NFT MARKETPLACE</h2>
+      <p>Welcome to the virtual world's one-stop-shop for the very best digital assets. Here you can search and buy creator's ASSETS with SAND to incorporate them into your LAND</p>
+      <div class="marketplace-filters">
+        <button class="active">Newest items</button>
+        <button>Latest sales</button>
+        <button>Latest listings</button>
+        <button>Parcels and Estates</button>
+      </div>
+      <div class="marketplace-list">
+        <div class="marketplace-card">
+          <img src="https://i.pravatar.cc/120?img=1" alt="NFT 1">
+          <div class="title">#7297 HAND-DROWN APES</div>
+          <div class="meta"><span class="tag">EPIC</span> 18 / 50</div>
+          <div class="price">0.11 wETH</div>
+        </div>
+        <div class="marketplace-card">
+          <img src="https://i.pravatar.cc/120?img=2" alt="NFT 2">
+          <div class="title">#1245 JELLYDEEP OCEA</div>
+          <div class="meta"><span class="tag">EPIC</span> 15 / 30</div>
+          <div class="price">0.152 wETH</div>
+        </div>
+        <div class="marketplace-card">
+          <img src="https://i.pravatar.cc/120?img=3" alt="NFT 3">
+          <div class="title">#2604 (B)APETAVERSE</div>
+          <div class="meta"><span class="tag">EPIC</span> 13 / 20</div>
+          <div class="price">0.021 wETH</div>
+        </div>
+        <div class="marketplace-card">
+          <img src="https://i.pravatar.cc/120?img=4" alt="NFT 4">
+          <div class="title">#7200 ESSENCE LINE</div>
+          <div class="meta"><span class="tag">EPIC</span> 9 / 15</div>
+          <div class="price">2.1 wETH</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Communities -->
+    <section class="trusted-section" id="trusted">
+      <h2>HOME TO WORLD'S MOST TRUSTED COMMUNITIES</h2>
+      <p>Flow is easy to use and powerful to build with. Every aspect of the platform was designed from the ground up to support exceptional user experience at mainstream scale, originally conceived by the team behind a decentralized network supported and built on by a growing community.</p>
+      <div class="trusted-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png" alt="Amazon" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Stripe_Logo%2C_revised_2016.png" alt="Stripe" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Coinbase.png" alt="Coinbase" height="32">
+      </div>
+    </section>
+
+    <!-- Partners/Backers Section -->
+    <section class="partners-section scroll-animate" data-animate="fade-in">
+      <h2>Our Partners & Backers</h2>
+      <div class="partners-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" height="32">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Coinbase.png" alt="Coinbase" height="32">
+      </div>
+    </section>
+
+    <!-- Roadmap/Timeline Section -->
+    <section class="roadmap-section scroll-animate" data-animate="slide-up">
+      <h2>Our Roadmap</h2>
+      <div class="roadmap-timeline">
+        <div class="roadmap-item">
+          <span class="roadmap-date">Q1 2023</span>
+          <span class="roadmap-dot"></span>
+          <div class="roadmap-desc">Platform Launch & First NFT Drop</div>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-date">Q2 2023</span>
+          <span class="roadmap-dot"></span>
+          <div class="roadmap-desc">Mobile App Beta & Community Events</div>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-date">Q3 2023</span>
+          <span class="roadmap-dot"></span>
+          <div class="roadmap-desc">Marketplace Expansion & Partnerships</div>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-date">Q4 2023</span>
+          <span class="roadmap-dot"></span>
+          <div class="roadmap-desc">DAO Launch & Creator Tools</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+      <h2>LATEST NEWS FROM VEC</h2>
+      <div class="news-list">
+        <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="News 1">
+          <div class="news-title">Buying NFT's With Credit Cards Made Easy.</div>
+          <div class="news-desc">Introducing the barriers to entering the NFT world are getting lower to encourage more participation.</div>
+          <div class="news-meta">Apr 01 • 3 min read</div>
+        </div>
+        <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="News 2">
+          <div class="news-title">Bulk Upload NFT's Is Now Live on NFTify.</div>
+          <div class="news-desc">Say goodbye to the manual work associated with uploading collections. Bulk upload is now available to take speed - a long-awaited...</div>
+          <div class="news-meta">Mar 22 • 5 min read</div>
+        </div>
+        <div class="news-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="News 3">
+          <div class="news-title">Event Recap: NFT Summit Tokyo [pinnacle]</div>
+          <div class="news-desc">On March 17–18th, 2022, Nikino Ngan (VEC), Co-founder of NFTify, attended the NFT Summit Tokyo.</div>
+          <div class="news-meta">Feb 14 • 3 min read</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview-section scroll-animate" data-animate="fade-in">
+      <h2>From Our Blog</h2>
+      <div class="blog-list">
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Blog 1">
+          <div class="blog-title">NFT Trends in 2023</div>
+          <div class="blog-desc">Discover the latest trends and predictions for the NFT market this year.</div>
+          <a href="#" class="blog-readmore">Read More</a>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Blog 2">
+          <div class="blog-title">How to Launch Your First NFT</div>
+          <div class="blog-desc">A step-by-step guide for artists and creators to mint and sell their first NFT.</div>
+          <a href="#" class="blog-readmore">Read More</a>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Blog 3">
+          <div class="blog-title">Community Building in Web3</div>
+          <div class="blog-desc">Learn how to grow and engage your NFT community in the decentralized world.</div>
+          <a href="#" class="blog-readmore">Read More</a>
+        </div>
+        <div class="blog-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Blog 4">
+          <div class="blog-title">NFT Security Best Practices</div>
+          <div class="blog-desc">Tips and tricks to keep your NFTs and digital assets safe from scams and hacks.</div>
+          <a href="#" class="blog-readmore">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works-section" id="how-it-works">
+      <h2>How It Works</h2>
+      <div class="how-it-works-steps">
+        <div class="step">
+          <div class="step-icon">🖼️</div>
+          <h3>Create or Discover</h3>
+          <p>Sign up and create your own NFT or discover unique digital assets from top creators.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">💸</div>
+          <h3>Buy & Sell</h3>
+          <p>Buy, sell, or auction NFTs securely with our easy-to-use marketplace and wallet integration.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🚀</div>
+          <h3>Showcase & Earn</h3>
+          <p>Showcase your collection, earn rewards, and join a vibrant NFT community.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section scroll-animate" id="testimonials" data-animate="slide-up">
+      <h2>What Our Users Say</h2>
+      <div class="testimonials-carousel">
+        <button class="testimonial-prev" aria-label="Previous testimonial">&#8592;</button>
+        <div class="testimonials-list">
+          <div class="testimonial active">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User 1"></div>
+            <div class="testimonial-content">
+              <p>"VEC NFT Marketplace made it so easy to get started with NFTs. The interface is beautiful and intuitive!"</p>
+              <span>- Alex, Digital Artist</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/women/46.jpg" alt="User 2"></div>
+            <div class="testimonial-content">
+              <p>"I love the community and the variety of art available. I found my favorite NFT here!"</p>
+              <span>- Maria, Collector</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-avatar"><img src="https://randomuser.me/api/portraits/men/47.jpg" alt="User 3"></div>
+            <div class="testimonial-content">
+              <p>"The buying process is smooth and secure. Highly recommended for both beginners and pros."</p>
+              <span>- John, Investor</span>
+            </div>
+          </div>
+        </div>
+        <button class="testimonial-next" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-section scroll-animate" data-animate="fade-in">
+      <div class="newsletter-box">
+        <h2>Stay in the Loop</h2>
+        <p>Subscribe to our newsletter for the latest updates, drops, and NFT news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- App Download Links Section -->
+    <section class="app-download-section scroll-animate" data-animate="slide-up">
+      <div class="app-download-box">
+        <h2>Get the VEC App</h2>
+        <p>Download our app for the best NFT experience on the go.</p>
+        <div class="app-badges">
+          <a href="#" class="app-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"></a>
+          <a href="#" class="app-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="Download on the App Store"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section scroll-animate" data-animate="fade-in">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is an NFT?</button>
+          <div class="faq-answer" hidden>NFT stands for Non-Fungible Token, a unique digital asset that represents ownership of real-world items like art, music, and more.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How do I buy an NFT?</button>
+          <div class="faq-answer" hidden>Sign up, connect your wallet, and browse the marketplace to purchase NFTs using supported cryptocurrencies.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my digital art secure?</button>
+          <div class="faq-answer" hidden>Yes, all NFTs are stored securely on the blockchain, ensuring authenticity and ownership.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I sell my own NFTs?</button>
+          <div class="faq-answer" hidden>Absolutely! You can mint and list your own NFTs for sale on our platform.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section scroll-animate" data-animate="fade-in">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content footer-grid">
+      <div class="footer-col about">
+        <div class="footer-logo">🦄 VEC</div>
+        <p class="footer-desc">Get started with the easiest and most secure platform to buy and trade digital ART and NFTs. Join our vibrant community today!</p>
+      </div>
+      <div class="footer-col">
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="#marketplace">NFT Marketplace</a></li>
+          <li><a href="#favorite-art">Explore Art</a></li>
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#">Top Sellers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#news">Latest News</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Terms & Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <div class="footer-social">
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+          <a href="https://discord.com/" target="_blank" aria-label="Discord"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord"></a>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:support@vecnftartists.com">support@vecnftartists.com</a>
+          <div class="footer-address">15th floor chambers, P.O. Box 4549, Road Town, Tortola, BVI, British Virgin Islands.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2023 VEC Access, Inc. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent-banner" id="cookieConsent">
+    <span>We use cookies to improve your experience. By using our site, you agree to our <a href="#">cookie policy</a>.</span>
+    <button id="acceptCookies">Accept</button>
+  </div>
+</body>
+</html>
